@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Latihan Modul 8</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: #ffffff;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+    .box-outer {
+      border: 3px solid #000;
+      padding: 15px;
+      background-color: #fff;
+    }
+    .header-bar {
+      background-color: #e0e0e0;
+      padding: 12px 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .content-box {
+      background-color: #e0e0e0;
+      padding: 20px;
+      height: 100%; /* Memastikan tinggi kotak abu-abu penuh */
+      border-radius: 4px;
+    }
+    .title-banner {
+      background-color: #ffffff;
+      padding: 8px 15px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #333;
+    }
+    .footer-bar {
+      background-color: #e0e0e0;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seluruh elemen HARUS berada di dalam div.box-outer ini -->
+  <div class="container-fluid box-outer">
+    
+    <!-- Header: NAMA & NIM -->
+    <div class="header-bar d-flex justify-content-between">
+      <span>NAMA : Ilham Rasya Akbar</span>
+      <span>NIM : K3525063</span>
+    </div>
+
+    <!-- Main Content Grid -->
+    <div class="row g-3">
+      
+      <!-- Kolom Kiri: TESTIMONI -->
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="content-box">
+          <div class="title-banner">TESTIMONI</div>
+          <p>Mata kuliah Desain Web sangat seru dan memberikan banyak wawasan baru mengenai pengembangan tampilan frontend. 
+            Materi modul Bootstrap 8 ini sangat membantu dalam memahami bagaimana membangun antarmuka web yang responsif secara cepat dan efisien tanpa perlu membuat kelas CSS dari awal.</p>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: KRITIK & SARAN -->
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column gap-3">
+        
+        <!-- Box KRITIK -->
+        <div class="content-box">
+          <div class="title-banner">KRITIK</div>
+          <p>Alokasi waktu praktikum 1x50 menit terasa sedikit singkat untuk mempelajari dan mempraktikkan seluruh modul secara mendalam, terutama bagi yang baru pertama kali mengenal class utilitas Bootstrap.</p>
+        </div>
+
+        <!-- Box SARAN -->
+        <div class="content-box">
+          <div class="title-banner">SARAN</div>
+          <p>Disarankan agar pada modul berikutnya diberikan contoh studi kasus proyek nyata yang lebih kompleks dan penjelasan tambahan mengenai custom breakpoint serta integrasi komponen JavaScript Bootstrap secara tingkat lanjut.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer: Dipastikan berada di bawah baris (row) dan MASIH di dalam box-outer -->
+    <div class="footer-bar">
+      FOOTER
+    </div>
+
+  </div> <!-- Tag penutup .box-outer -->
+
+  <!-- Bootstrap 5 JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f2f6e9;
+}
+
+.navbar {
+  background: #6ab446;
+  padding: 10px;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.header {
+  background-image: url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1200');
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+  width: 80%;
+  z-index: 1;
+}
+
+.description h1 {
+  color: #6ab446;
+}
+
+.description p {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 1.3rem;
+}
+
+.description button {
+  border: 1px solid #6ab446;
+  color: #fff;
+  background: #6ab446;
+  border-radius: 0;
+}
+
+.description button:hover {
+  border: 1px solid #fff;
+  color: #000;
+  background: #fff;
+}
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.features img {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.features .form-control {
+  border-radius: 0;
+}
+
+.features .btn {
+  background-color: #6ab446;
+  border: 1px solid #6ab446;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 0;
+}
+
+.features .btn:hover {
+  background-color: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.page-footer {
+  background-color: #222;
+  padding: 60px 0 30px;
+  color: #ccc;
+}
+
+.footer-copyright {
+  color: #666;
+  padding: 40px 0 0;
+}
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 20%;
+    transform: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  .description h1 {
+    font-size: 1.8em;
+  }
+
+  .description p {
+    font-size: 1rem;
+  }
+
+  .features {
+    margin: 0;
+  }
+}

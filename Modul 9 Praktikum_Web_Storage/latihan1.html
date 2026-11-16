@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Storage - Latihan 1</title>
+</head>
+<body>
+    <center>
+        <h1 id="sapaan">Selamat Datang, Member!</h1>
+        <button onclick="gantiNama(event)">Masukkan Nama</button>
+        <button onclick="hapusNama()">Hapus Nama</button>
+    </center>
+
+    <script type="text/javascript">
+        const namaMember = document.getElementById('sapaan');
+
+        // Semak data tersimpan semasa halaman dimuatkan
+        function tampilkanNama() {
+            const namaTersimpan = localStorage.getItem('nama');
+            if (namaTersimpan) {
+                namaMember.innerHTML = 'Halo ' + namaTersimpan + '!';
+            } else {
+                namaMember.innerHTML = 'Selamat Datang, Member!';
+            }
+        }
+
+        // Jalankan fungsi semakan awal
+        tampilkanNama();
+
+        function gantiNama(e) {
+            let nama = prompt('Masukkan nama Anda:');
+            if (nama && nama.trim() !== "") {
+                localStorage.setItem("nama", nama); // Simpan ke localStorage
+                tampilkanNama(); // Kemaskini paparan
+            } else {
+                alert('Nama tidak boleh kosong!');
+                if (e) e.preventDefault();
+            }
+        }
+
+        function hapusNama() {
+            if (localStorage.getItem('nama')) {
+                localStorage.removeItem('nama'); // Padam dari localStorage
+                alert('Nama berhasil dihapus!');
+                tampilkanNama();
+            } else {
+                alert('Tidak ada nama yang tersimpan!');
+            }
+        }
+    </script>
+</body>
+</html>
+
